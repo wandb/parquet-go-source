@@ -18,14 +18,6 @@
   version = "v0.39.0"
 
 [[projects]]
-  digest = "1:b6526fa4c07838585a136c1a0d897daf598a20412cb3b933d340b8657b283101"
-  name = "github.com/DataDog/zstd"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "2347a397da4ee9c6b8226d4aff82c302d0e52773"
-  version = "v1.4.1"
-
-[[projects]]
   digest = "1:e95de5c830369d6592224de57a31cd87a2ba1cec2abaf050d06a63ee8f7babd8"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
@@ -160,20 +152,8 @@
   version = "v1.2.2"
 
 [[projects]]
-  digest = "1:6325b899f608a91dd0a7304e1a8115cfe361866b97d1fd92b558fa2053fa4022"
+  digest = "1:0a93f6d70cf84b5e443f5cbb150c3a9be06afa848e7810f1faa4b93c278d49c8"
   name = "github.com/wandb/parquet-go"
-  packages = [
-    "parquet",
-    "reader",
-    "source",
-    "writer",
-  ]
-  pruneopts = "UT"
-  revision = "533209a8570f4355427f4c6c724de7fe827b86d5"
-
-[[projects]]
-  digest = "1:b3f1c3e823fb15a1814c2ec4225b855dd75cca08147f53da0172da7ff45ed010"
-  name = "github.com/xitongsys/parquet-go"
   packages = [
     "common",
     "compress",
@@ -181,13 +161,14 @@
     "layout",
     "marshal",
     "parquet",
+    "reader",
     "schema",
     "source",
     "types",
+    "writer",
   ]
   pruneopts = "UT"
-  revision = "06aec27b2a98c70158bb1ff994697e7440ba09e9"
-  version = "v1.4.0"
+  revision = "089ef9d20cb8b8bf97e6debdc4665f27e1827d78"
 
 [[projects]]
   digest = "1:b984f402fbabb0e9eb0476f0ecfa51d0b2ff11cd0ac03538d6284091033b39ae"
