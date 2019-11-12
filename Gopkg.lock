@@ -18,6 +18,14 @@
   version = "v0.39.0"
 
 [[projects]]
+  digest = "1:938f79d09131c6204cee2c363a6e9066a369bc1977f09028ca549f44a836b734"
+  name = "github.com/DataDog/zstd"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8fdb579680349497546a04291cedfff98a7829a0"
+  version = "v1.4.4"
+
+[[projects]]
   digest = "1:e95de5c830369d6592224de57a31cd87a2ba1cec2abaf050d06a63ee8f7babd8"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
@@ -26,7 +34,7 @@
   source = "github.com/apache/thrift"
 
 [[projects]]
-  digest = "1:f541b67e98d801e9ecf7bf5ac7b4dc5548a12f7fef62d1e1ab5f0b12878d4b03"
+  digest = "1:78f31651b3340ec37e2676adf99ebe23366e71be963c64e98a63e16e723b1b10"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -70,8 +78,8 @@
     "service/sts/stsiface",
   ]
   pruneopts = "UT"
-  revision = "2e28cfd3b8efdcccd08670e2d8a5483d16fe4e27"
-  version = "v1.25.9"
+  revision = "781d45fe0d5a562ef5b0d8c23527f4c443c86e58"
+  version = "v1.25.32"
 
 [[projects]]
   digest = "1:bf2909a0e829fd1160bf31b4f8a10443c8aa4d599f249e7be7e3382d8de702f5"
@@ -92,7 +100,7 @@
   name = "github.com/golang/groupcache"
   packages = ["lru"]
   pruneopts = "UT"
-  revision = "404acd9df4cc9859d64fb9eed42e5c026187287a"
+  revision = "611e8accdfc92c4187d399e95ce826046d4c8d73"
 
 [[projects]]
   digest = "1:be408f349cae090a7c17a279633d6e62b00068e64af66a582cae0983de8890ea"
@@ -152,8 +160,21 @@
   version = "v1.2.2"
 
 [[projects]]
-  digest = "1:0a93f6d70cf84b5e443f5cbb150c3a9be06afa848e7810f1faa4b93c278d49c8"
+  digest = "1:cd04dcfff781b65bd74042000f4193489a57c1642f3a450168aa3eb48cd4b19c"
   name = "github.com/wandb/parquet-go"
+  packages = [
+    "parquet",
+    "reader",
+    "source",
+    "writer",
+  ]
+  pruneopts = "UT"
+  revision = "06aec27b2a98c70158bb1ff994697e7440ba09e9"
+  version = "v1.4.0"
+
+[[projects]]
+  digest = "1:a5235558046ac06e97325aebfe3a3d12bdaf14863c48eab0a2fa451c9f16c5d5"
+  name = "github.com/xitongsys/parquet-go"
   packages = [
     "common",
     "compress",
@@ -161,17 +182,16 @@
     "layout",
     "marshal",
     "parquet",
-    "reader",
     "schema",
     "source",
     "types",
-    "writer",
   ]
   pruneopts = "UT"
-  revision = "089ef9d20cb8b8bf97e6debdc4665f27e1827d78"
+  revision = "197c89793393fdc175bc50568228d5a05221c9ee"
+  version = "1.4.3"
 
 [[projects]]
-  digest = "1:b984f402fbabb0e9eb0476f0ecfa51d0b2ff11cd0ac03538d6284091033b39ae"
+  digest = "1:7b6ca9454e8d16e34b251f181a4ae430a25805acca64ea46b0448583b44fcfe6"
   name = "go.opencensus.io"
   packages = [
     ".",
@@ -192,12 +212,12 @@
     "trace/tracestate",
   ]
   pruneopts = "UT"
-  revision = "59d1ce35d30f3c25ba762169da2a37eab6ffa041"
-  version = "v0.22.1"
+  revision = "aad2c527c5defcf89b5afab7f37274304195a6b2"
+  version = "v0.22.2"
 
 [[projects]]
   branch = "master"
-  digest = "1:8deeeb1cc9e8a39f1e409965d226c45aece7a065ea30fe411bb8a6eb0bdba5d8"
+  digest = "1:ecff0c65c627299ff316258a094c11f8e0582e3484563d6fe8eadfbf72abc137"
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -210,7 +230,7 @@
     "trace",
   ]
   pruneopts = "UT"
-  revision = "d66e71096ffb9f08f36d9aefcae80ce319de6d68"
+  revision = "daa7c04131f568e31c51927b359a2d197a357058"
 
 [[projects]]
   branch = "master"
@@ -228,11 +248,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:7c927f17d868be652a4cfe7de23e4292dea5b14d974a1d536e3b7cb7e79fd695"
+  digest = "1:824b4d14e35e35e821d3127319e51eb838f72434100750ad395db96d00b5a871"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "06d7bd2c5f4f4a6cc6e910b611851044253bd7d1"
+  revision = "d32e6e3b99c40f2bfaea45ea9596ed539eed1c0d"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
@@ -260,7 +280,7 @@
   version = "v0.3.2"
 
 [[projects]]
-  digest = "1:2c198c7697dfdca1572813b46d0ec54356c1338f49c6fe71da05b98fa9a803e0"
+  digest = "1:021158246495037835846d6e65d1122c1d4a55625350b24b562ab653929916e2"
   name = "google.golang.org/api"
   packages = [
     "googleapi",
@@ -275,8 +295,8 @@
     "transport/http/internal/propagation",
   ]
   pruneopts = "UT"
-  revision = "d7605a20bfcb4659ee2ea347b1f8f5be12b8a5b7"
-  version = "v0.11.0"
+  revision = "4f42dad4690a01d7f6fa461106c63889ff1be027"
+  version = "v0.13.0"
 
 [[projects]]
   digest = "1:3c03b58f57452764a4499c55c582346c0ee78c8a5033affe5bdfd9efd3da5bd1"
@@ -309,13 +329,14 @@
     "googleapis/type/expr",
   ]
   pruneopts = "UT"
-  revision = "548a555dbc03994223efbaba0090152849259498"
+  revision = "16a3f7862a1a494c52b23987ef8a993fd3f9a85e"
 
 [[projects]]
-  digest = "1:6cd77d0b616d2dcebd363dfecba593f27b0151fc82cdb5fbfb96c5a7cfbc95b5"
+  digest = "1:b59ce3ddb11daeeccccc9cb3183b58ebf8e9a779f1c853308cd91612e817a301"
   name = "google.golang.org/grpc"
   packages = [
     ".",
+    "backoff",
     "balancer",
     "balancer/base",
     "balancer/roundrobin",
@@ -331,10 +352,13 @@
     "internal/backoff",
     "internal/balancerload",
     "internal/binarylog",
+    "internal/buffer",
     "internal/channelz",
     "internal/envconfig",
     "internal/grpcrand",
     "internal/grpcsync",
+    "internal/resolver/dns",
+    "internal/resolver/passthrough",
     "internal/syscall",
     "internal/transport",
     "keepalive",
@@ -342,16 +366,14 @@
     "naming",
     "peer",
     "resolver",
-    "resolver/dns",
-    "resolver/passthrough",
     "serviceconfig",
     "stats",
     "status",
     "tap",
   ]
   pruneopts = "UT"
-  revision = "f6d0f9ee430895e87ef1ceb5ac8f39725bafceef"
-  version = "v1.24.0"
+  revision = "1a3960e4bd028ac0cec0a2afd27d7d8e67c11514"
+  version = "v1.25.1"
 
 [solve-meta]
   analyzer-name = "dep"
